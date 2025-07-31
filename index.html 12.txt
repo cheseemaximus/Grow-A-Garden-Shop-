@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grow a Garden Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+  <header>
+    <h1>Grow a Garden Shop</h1>
+    <small class="notice">ps Jacob is gay</small>
+  </header>
+
+  <main>
+    <section class="username-input">
+      <label for="roblox-username">Enter Roblox Username:</label>
+      <input type="text" id="roblox-username" placeholder="Roblox username">
+    </section>
+
+    <section class="shop-section">
+      <h2>🐾 Pet Prices</h2>
+      <div class="shop-grid" id="pet-items">
+        <!-- Pet items will be injected here -->
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="shop-section">
+      <h2>💰 Sheckel Prices</h2>
+      <div class="shop-grid" id="sheckel-items">
+        <!-- Sheckel items will be injected here -->
+      </div>
+    </section>
+
+    <section class="cart-section">
+      <h2>🛒 Your Cart</h2>
+      <ul id="cart-list"></ul>
+      <button id="checkout-button">Checkout</button>
+      <p class="message-after-order">If you do a custom pet or sheckel order, DM me @cheesemaximus</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html> <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grow a Garden Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+  <header>
+    <h1>Grow a Garden Shop</h1>
+    <small class="notice">ps Jacob is gay</small>
+  </header>
+
+  <main>
+    <section class="username-input">
+      <label for="roblox-username">Enter Roblox Username:</label>
+      <input type="text" id="roblox-username" placeholder="Roblox username">
+    </section>
+
+    <section class="shop-section">
+      <h2>🐾 Pet Prices</h2>
+      <div class="shop-grid" id="pet-items">
+        <!-- Pet items will be injected here -->
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="shop-section">
+      <h2>💰 Sheckel Prices</h2>
+      <div class="shop-grid" id="sheckel-items">
+        <!-- Sheckel items will be injected here -->
+      </div>
+    </section>
+
+    <section class="cart-section">
+      <h2>🛒 Your Cart</h2>
+      <ul id="cart-list"></ul>
+      <button id="checkout-button">Checkout</button>
+      <p class="message-after-order">If you do a custom pet or sheckel order, DM me @cheesemaximus</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html> const cart = [];
+const usernameInput = document.getElementById('roblox-username');
+const cartList = document.getElementById('cart-list');
+const checkoutButton = document.getElementById('checkout-button');
+const messageAfterOrder = document.getElementById('order-message');
+
+// Stripe product IDs (updated from your list)
+const stripeProductIDs = {
+  "Disco Bee": "prod_SmHjUTZ3xPrxu5",
+  "Spinosaurus": "prod_SmHkR1ka6IIi1C",
+  "Raccoon": "prod_SmHk5ideq10FDL",
+  "Bald Eagle": "prod_SmHmZiSqLWOlJu",
+  "Dragonfly": "prod_SmHniLGCpfKARv",
+  "Queen Bee": "prod_SmHnblvqvKaWR7",
+  "Butterfly": "prod_SmHoWqoSU2EbFJ",
+  "Mimic Octopus": "prod_SmHpyDcDFYp7gq",
+  "Red Fox": "prod_SmHpILX4PTCyqz",
+  "Fennec Fox": "prod_SmHqMmL4I4alRu",
+  "T-Rex": "prod_SmHqLzos1VFSVO",
+  "Corrupt Kitsune": "prod_SmHrDUEVCpwMdo",
+  "1T Sheckels": "prod_SmHrDUEVCpwMdo",
+  "750T Sheckels": "prod_SmHsgv5thfaQLU",
+  "1QD Sheckels": "prod_SmHtIVbhLNtxPJ",
+  "12QD Sheckels": "prod_SmHu9HkFnHGnyw"
+};
+
+function addToCart(itemName) {
+  cart.push(itemName);
+  updateCartDisplay();
+}
+
+function updateCartDisplay() {
+  cartList.innerHTML = '';
+  cart.forEach((item, index) => {
+    const li = document.createElement('li');
+    li.textContent = `${item}`;
+    cartList.appendChild(li);
+  });
+}
+
+checkoutButton.addEventListener('click', () => {
+  const username = usernameInput.value.trim();
+  if (!username) {
+    alert('Please enter your Roblox username.');
+    return;
+  }
+
+  if (cart.length === 0) {
+    alert('Your cart is empty.');
+    return;
+  }
+
+  const selectedItem = cart[0]; // Only one item at a time for Stripe
+  const productId = stripeProductIDs[selectedItem];
+
+  if (!productId) {
+    alert('Product not found.');
+    return;
+  }
+
+  const checkoutURL = `https://buy.stripe.com/test_${productId}`;
+  window.location.href = checkoutURL;
+});  <!-- Divider -->
+  <div class="divider">💰 Sheckel Prices</div>
+
+  <!-- Sheckel Items -->
+  <div class="shop">
+    <div class="item">
+      <h3>1T Sheckels</h3>
+      <p>$2.99</p>
+      <button onclick="addToCart('1T Sheckels')">Add to Cart</button>
+    </div>
+    <div class="item">
+      <h3>750T Sheckels</h3>
+      <p>$5.99</p>
+      <button onclick="addToCart('750T Sheckels')">Add to Cart</button>
+    </div>
+    <div class="item">
+      <h3>1QD Sheckels</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('1QD Sheckels')">Add to Cart</button>
+    </div>
+    <div class="item">
+      <h3>12QD Sheckels</h3>
+      <p>$14.99</p>
+      <button onclick="addToCart('12QD Sheckels')">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Cart Summary -->
+  <div id="cart">
+    <h2>🛒 Your Cart</h2>
+    <ul id="cart-list"></ul>
+
+    <label for="roblox-username">Enter Roblox Username:</label>
+    <input type="text" id="roblox-username" placeholder="Your Roblox Username">
+
+    <button id="checkout-button">Checkout</button>
+  </div>
+
+  <!-- Order Message -->
+  <p id="order-message">After purchase, DM <strong>@cheesemaximus</strong> on Discord with your Roblox username to coordinate delivery.</p>
+
+</body>
+</html>
