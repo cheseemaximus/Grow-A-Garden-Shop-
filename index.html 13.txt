@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grow a Garden Shop</title>
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .section-title {
+      border-bottom: 2px solid white;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+    .item-card {
+      border: 1px solid white;
+      padding: 10px;
+      margin: 10px;
+      max-width: 300px;
+      display: inline-block;
+      vertical-align: top;
+      background-color: #111;
+    }
+    .item-card input[type="text"] {
+      width: 100%;
+      margin-top: 5px;
+      padding: 6px;
+      font-size: 14px;
+    }
+    .item-card button {
+      margin-top: 5px;
+      width: 100%;
+      padding: 8px;
+      font-weight: bold;
+    }
+    #cart {
+      margin-top: 40px;
+      border-top: 2px solid white;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grow a Garden Shop</h1>
+
+  <p style="text-align:center;">Enter Roblox Username: <input type="text" id="roblox-username" placeholder="Roblox username" /></p>
+
+  <h2 class="section-title">🐾 Pet Prices</h2>
+
+  <div id="shop-items">    <div class="item-card">
+      <strong>Disco Bee - $2.99</strong>
+      <button onclick="addToCart('Disco Bee')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>Raccoon - $3.99</strong>
+      <button onclick="addToCart('Raccoon')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>Bald Eagle - $3.99</strong>
+      <button onclick="addToCart('Bald Eagle')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>Dragonfly - $2.99</strong>
+      <button onclick="addToCart('Dragonfly')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>Queen Bee - $5.49</strong>
+      <button onclick="addToCart('Queen Bee')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>Butterfly - $4.49</strong>
+      <button onclick="addToCart('Butterfly')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>Mimic Octopus - $6.25</strong>
+      <button onclick="addToCart('Mimic Octopus')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>Red Fox - $3.50</strong>
+      <button onclick="addToCart('Red Fox')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>Fennec Fox - $4.99</strong>
+      <button onclick="addToCart('Fennec Fox')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>Spinosaurus - $5.99</strong>
+      <button onclick="addToCart('Spinosaurus')">Add to Cart</button>
+    </    <div class="item-card">
+      <strong>Corrupt Kitsune - $7.99</strong>
+      <button onclick="addToCart('Corrupt Kitsune')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>Spinosaurus - $6.99</strong>
+      <button onclick="addToCart('Spinosaurus')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>T-Rex - $7.50</strong>
+      <button onclick="addToCart('T-Rex')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>Fennec Fox - $3.25</strong>
+      <button onclick="addToCart('Fennec Fox')">Add to Cart</button>
+    </div>    <h2>💰 Sheckel Prices</h2>
+
+    <div class="item-card">
+      <strong>1T Sheckels - $2.99</strong>
+      <button onclick="addToCart('1T Sheckels')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>750T Sheckels - $4.50</strong>
+      <button onclick="addToCart('750T Sheckels')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>1QD Sheckels - $6.99</strong>
+      <button onclick="addToCart('1QD Sheckels')">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+      <strong>12QD Sheckels - $45.00</strong>
+      <button onclick="addToCart('12QD Sheckels')">Add to Cart</button>
+    </div> <!-- 💰 Sheckel Prices -->
+<div class="section-divider">💰 Sheckel Prices</div>
+
+<div class="item-card">
+  <h3>1T Sheckels</h3>
+  <p>$2.00</p>
+  <form action="https://buy.stripe.com/8wM4iL5E94El7ZOdQQ" method="GET">
+    <input type="text" name="username" placeholder="Roblox Username" required>
+    <button type="submit">Buy Now</button>
+  </form>
+</div>
+
+<div class="item-card">
+  <h3>750T Sheckels</h3>
+  <p>$10.00</p>
+  <form action="https://buy.stripe.com/aEU7tw5E9d2z8kgdQX" method="GET">
+    <input type="text" name="username" placeholder="Roblox Username" required>
+    <button type="submit">Buy Now</button>
+  </form>
+</div>
+
+<div class="item-card">
+  <h3>1QD Sheckels</h3>
+  <p>$15.00</p>
+  <form action="https://buy.stripe.com/3cs7tw5E9apD5sc7su" method="GET">
+    <input type="text" name="username" placeholder="Roblox Username" required>
+    <button type="submit">Buy Now</button>
+  </form>
+</div>
+
+<div class="item-card">
+  <h3>12QD Sheckels</h3>
+  <p>$60.00</p>
+  <form action="https://buy.stripe.com/5kA8ypdZZ2eD0Tu5kl" method="GET">
+    <input type="text" name="username" placeholder="Roblox Username" required>
+    <button type="submit">Buy Now</button>
+  </form>
+</div>
+
+<!-- Custom Order Contact Message -->
+<p class="note" style="text-align: center; font-size: 0.9rem; margin-top: 40px;">
+  For custom pet or Sheckel orders, DM <strong>@cheesemaximus</strong> on Discord.
+</p>    </main>
+
+    <footer>
+      <p>&copy; 2025 Grow a Garden Shop. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
