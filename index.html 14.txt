@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grow a Garden Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      color: black;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid black;
+    }
+    h1 {
+      margin: 0;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .product {
+      border: 1px solid black;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .product h2 {
+      margin: 0 0 10px 0;
+    }
+    .product button {
+      background: black;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+    .product button:hover {
+      background: gray;
+    }
+    .divider {
+      border-top: 2px dashed black;
+      margin: 40px 0;
+      text-align: center;
+      position: relative;
+    }
+    .divider span {
+      background: white;
+      padding: 0 10px;
+      position: relative;
+      top: -12px;
+    }
+    .note {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 40px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Grow a Garden Shop</h1>
+  </header>
+  <div class="container">
+    <p style="text-align: center;">Welcome to the shop! All items are processed securely through Stripe.</p>
+
+    <div class="product">
+      <h2>Disco Bee</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_00g5kRf1I8eDa9C5kk'">Buy</button>
+    </div>
+
+    <div class="product">
+      <h2>Spinosaurus</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_4gw3c3dBcdhwepq00e'">Buy</button>
+    </div>    <div class="product">
+      <h2>Raccoon</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_5kAbLd5xU1XG9pG4gh'">Buy</button>
+    </div>
+
+    <div class="product">
+      <h2>Bald Eagle</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_fZe6rz5xUeZy8r6aEF'">Buy</button>
+    </div>
+
+    <div class="product">
+      <h2>Dragonfly</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_28o7uTbMwa7a7fK6oo'">Buy</button>
+    </div>
+
+    <div class="product">
+      <h2>Queen Bee</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_dR64jZ9p89eC3zG28e'">Buy</button>
+    </div>
+
+    <div class="product">
+      <h2>Butterfly</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_cN24jZ9p8cVU0Ck3cl'">Buy</button>
+    </div>
+
+    <div class="product">
+      <h2>Mimic Octopus</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_4gw2aRbMweZy2bu00e'">Buy</button>
+    </div>
+
+    <div class="product">
+      <h2>Red Fox</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_cN24hFbMwfFU4YccMp'">Buy</button>
+    </div>
+
+    <div class="product">
+      <h2>Fennec Fox</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_bIY4jZ9p8fx2dEY5ko'">Buy</button>
+    </div>
+
+    <div class="product">
+      <h2>T-Rex</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_eVacOBg60a7a3zGcMP'">Buy</button>
+    </div>
+
+    <div class="product">
+      <h2>Corrupt Kitsune</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_eVa6rz3wsbDi4Yc6oq'">Buy</button>
+    </div>
+
+    <div class="divider"><span>SHECKELS</span></div>    <div class="product">
+      <h2>1T Sheckels</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_eVa6rz3wsbDi4Yc6oq'">Buy</button>
+    </div>
+
+    <div class="product">
+      <h2>750T Sheckels</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_8wM5nLbwQeZyaJG5ko'">Buy</button>
+    </div>
+
+    <div class="product">
+      <h2>1QD Sheckels</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_eVa7uT3ws4q67fKcMO'">Buy</button>
+    </div>
+
+    <div class="product">
+      <h2>12QD Sheckels</h2>
+      <button onclick="location.href='https://buy.stripe.com/test_3cs9BZ9p8bDi4Yc7sJ'">Buy</button>
+    </div>
+
+    <div class="note">
+      <p>If you do a custom pet or sheckel order, please DM me at <strong>@cheesemaximus</strong>.</p>
+    </div>
+
+    <footer>
+      <p style="font-size: 10px; text-align: left;">ps Jacob is gay</p>
+    </footer>
+
+  </body>
+</html>
