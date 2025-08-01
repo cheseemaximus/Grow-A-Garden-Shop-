@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grow a Garden Shop</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .item {
+      border: 1px solid #000;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    .buy-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .buy-button:hover {
+      background-color: #444;
+    }
+    .section-label {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Grow a Garden Shop</h1>
+    <p>All purchases are final. Please double check your order!</p>
+  </header>
+  <div class="container">
+
+    <p class="section-label">Pets</p>
+
+    <div class="item">
+      <h3>Disco Bee</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_28o2a8eAY6DR02Q14d">Buy with Stripe</a>
+    </div>
+
+    <div class="item">
+      <h3>Spinosaurus</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_3cs4kE5rK7Tv7iY5kE">Buy with Stripe</a>
+    </div>
+
+    <div class="item">
+      <h3>Raccoon</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_6oE8zU9Sk3Rn9kYaEG">Buy with Stripe</a>
+    </div>
+
+    <div class="item">
+      <h3>Bald Eagle</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_28o3fcdAk4pF4Fa3cd">Buy with Stripe</a>
+    </div>
+
+    <div class="item">
+      <h3>Dragonfly</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_3cs7u86wM5xH4Fa3cj">Buy with Stripe</a>
+    </div>
+
+    <div class="item">
+      <h3>Queen Bee</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_8wMaHUgGc2xt4Fa4gi">Buy with Stripe</a>
+    </div>
+
+    <div class="item">
+      <h3>Butterfly</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_00g2a8dAkbZVaVi2a2">Buy with Stripe</a>
+    </div>
+
+    <div class="item">
+      <h3>Mimic Octopus</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_dR6aHU9Sk7Tv3BKfZZ">Buy with Stripe</a>
+    </div>
+
+    <div class="item">
+      <h3>Red Fox</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_cN2dTJ0As9Nz4Fa6oo">Buy with Stripe</a>
+    </div>
+
+    <div class="item">
+      <h3>Fennec Fox</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_00gdTJcJ6bZV2EIbIK">Buy with Stripe</a>
+    </div>    <div class="item">
+      <h3>T-Rex</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_3cscPdeAY6DR02Q9AC">Buy with Stripe</a>
+    </div>
+
+    <div class="item">
+      <h3>Corrupt Kitsune</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_14k7u83NG7Tv3BK4gk">Buy with Stripe</a>
+    </div>
+
+    <p class="section-label">Sheckels</p>
+
+    <div class="item">
+      <h3>1T Sheckels</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_14k7u83NG7Tv3BK4gk">Buy with Stripe</a>
+    </div>
+
+    <div class="item">
+      <h3>750T Sheckels</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_6oE9B8btG8Cz5pOaEK">Buy with Stripe</a>
+    </div>
+
+    <div class="item">
+      <h3>1QD Sheckels</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_bIY8zUf8gfhD0lq4gk">Buy with Stripe</a>
+    </div>
+
+    <div class="item">
+      <h3>12QD Sheckels</h3>
+      <a class="buy-button" href="https://buy.stripe.com/test_8wMcPddAk5xH6rSfZ4">Buy with Stripe</a>
+    </div>
+
+  </div>
+
+  <footer style="text-align:center; padding:20px; background:#f5f5f5; color:#555;">
+    &copy; 2025 Grow a Garden Shop. All rights reserved.
+  </footer>
+</body>
+</html>
